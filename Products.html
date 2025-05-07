@@ -1,23 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PH CLOTHING</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="./script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - PH Clothing</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div style="margin-top: 0.2rem;">        
-            <a href="index.html" id="Logo"><img src="./Images/Logo/webLogo.png" alt="Logo"></a></div>
-        <ul>
-            <li class="hover"><a href="index.html">Home</a></li>
-            <li class="hover"><a href="about.html">About Us</a></li>
-            <li class="hover"><a href="Products.html"><u>Products</u></a></li>
-            <li class="hover"><a href="services.html">Services</a></li>
-        </ul>
-        <button id="shopBtn" class="hover" onclick="buyOnline()">Order Online</button>
-    </nav>
+  <nav id="menuDrop">
+    <button class="Menu Close" onclick="showMenu()"><img src="./Images/close.png" width="35"></button><br>
+    <section class="Nav">
+      <a href="index.html">Home</a><br>
+      <a href="about.html">About Us</a><br>
+      <a href="Products.html"><u>Products</u></a><br>
+      <a href="services.html">Services</a>
+    </section>
+  </nav>
+  <nav>
+    <div style="margin-top: -.2rem;">
+      <button class="Menu hover" onclick="showMenu()"><img src="./Images/Menu.png" width="35"></button>
+      <a href="index.html" id="Logo"><img src="./Images/Logo/webLogo.png" alt="Logo"></a>
+    </div>
+    <ul>
+      <li class="hover"><a href="index.html">Home</a></li>
+      <li class="hover"><a href="about.html">About Us</a></li>
+      <li class="hover"><a href="Products.html"><u>Products</u></a></li>
+      <li class="hover"><a href="services.html">Services</a></li>
+    </ul>
+    <button id="shopBtn" class="hover" onclick="buyOnline()">Order Online</button>
+  </nav>
+  <div class="lower-parent">
+    <div class="small-image-parent">
+      <img src="Images/Blue.png" class="small-image" data-color="Blue">
+      <img src="Images/White.png" class="small-image" data-color="White">
+      <img src="Images/Black.png" class="small-image" data-color="Black">
+    </div>
+    <div class="product-sec">
+      <img src="Images/big.png" class="big-image" id="mainImage">
+      <div class="reviews">
+        <img src="Images/star.png" alt="star">
+        <img src="Images/star.png" alt="star">
+        <img src="Images/star.png" alt="star">
+        <img src="Images/star.png" alt="star">
+        <img src="Images/star.png" alt="star">
+        <p class="review-font">54 Reviews</p>
+      </div>
+      <div class="price">
+        <p class="pre-price">$5</p>
+        <p class="cur-price">$3</p>
+      </div>
+    </div>
+    <div class="description">
+      <div>
+        <p style="color: white; font-size: 65px; font-weight: bold;">PH Plain Shirt</p>
+        <p style="color: white;font-size: 20px; text-align: justify;">Keep it simple and stylish with our Plain Shirt. Made from soft, breathable fabric, it’s perfect for any occasion. Versatile and comfortable, this wardrobe staple is available in a variety of colors to suit your style.</p>
+      </div>
+      <div class="hero">
+        <div class="choices">
+          <p style="color: white; font-size: 40px; margin: 40 0 0 0;">Size</p>
+          <select class="text-box" id="sizeSelect">
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <div class="choices">
+          <p style="color: white; font-size: 40px; margin: 40 0 20 0;">Color</p>
+          <div class="color-button-hero" id="colorSelector">
+            <button class="color-button" style="background-color: blue;" data-color="Blue" onclick="change()"></button>
+            <button class="color-button" style="background-color: white;" data-color="White"></button>
+            <button class="color-button" style="background-color: black;" data-color="Black"></button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p style="color: white; font-size: 40px; margin: 0 0 0 0;">Quantity</p>
+        <div class="text-box left">
+          <button id="decQty">-</button>
+          <span id="qty">1</span>
+          <button id="incQty">+</button>
+        </div>
+      </div>
+      <div>
+        <br>
+        <div class="add left">
+            
+          <button class="text-box-orange" id="addToCart" style="padding: 0.3rem 0.6rem">Add to Cart</button>
+        </div>
+        <br>
+        <button class="text-box-orange" id="buyNow">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
