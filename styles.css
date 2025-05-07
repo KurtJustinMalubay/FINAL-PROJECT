@@ -1,0 +1,365 @@
+:root {
+    --heading-font-size: 1rem;
+    --logo-size: 2.35rem;
+    --primary-color: #e47734;
+    --secondary-color: #ffffff;
+    --background-color: #000000;
+    --sidebar-color: #232323;
+    --slogan-size: 3.7rem;
+    --pharagraph-size: 1.1rem;
+    --mainText-size-about: 2rem;
+    --miniDescription-size: 0.75rem;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: arial;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+/*NAVIGATION*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0;
+    height: 3.438rem;
+    align-items: center;
+}
+
+nav a {
+    font-size: var(--heading-font-size);
+    text-decoration: none;
+    margin-left: 2rem;
+    color: var(--secondary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: -7rem;
+}
+
+#Logo {
+    margin: 0.5rem 0 auto 0;
+    cursor: pointer;
+}
+
+#Logo img {
+    height: var(--logo-size);
+}
+
+#shopBtn {
+    height: var(--logo-size);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 2rem;
+    font-size: var(--heading-font-size);
+    cursor: pointer;
+    margin: 0.5rem 1rem auto 0;
+    width: 7rem;
+    
+}
+/*NAVIGATION*/
+
+
+/*HOME PAGE*/
+.mainCont {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-color);
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.mainCont img {
+    width: 27rem;
+}
+
+.mainCont h1 {
+    font-size: var(--slogan-size);
+    pointer-events: none;
+}
+  
+.slogImg {
+    margin-top: 2rem;
+}
+/*HOME PAGE*/
+
+
+/*ABOUT PAGE*/
+.bottomContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+    
+.leftCont {
+    width: 70%;
+    height: auto;
+    margin: 2rem 1rem 1rem 3.4rem;
+}
+
+.rightCont {
+    width: 30%;
+    background-color: var(--sidebar-color);
+    text-align: center;
+    padding: 1.2rem;
+}
+  
+.leftCont h1 {
+    color: var(--primary-color);
+    font-size: var(--mainText-size-about);
+}
+  
+.rightCont h1 {
+    color: var(--secondary-color);
+    font-size: var(--mainText-size-about);
+}
+  
+.leftCont,
+.rightCont p {
+    color: var(--secondary-color);
+    font-size: var(--pharagraph-size);
+    text-align: justify;
+}
+  
+.rightCont ul {
+    list-style-type: none;
+    margin: 2rem 0 0 -2rem;
+    color: var(--secondary-color);
+    font-size: var(--pharagraph-size);
+    line-height: 3.4rem;
+}
+  
+.foundingTitans {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 2rem auto;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #e47734 transparent;
+    scroll-behavior: smooth;
+}
+  
+.foundingTitans::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+.foundingTitans::-webkit-scrollbar-thumb {
+    background-color: #e47734;
+    border-radius: 8px;
+}
+  
+.foundingTitans::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+  
+.profile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+  
+.profile img {
+    border-radius: 50%;
+    border: solid var(--primary-color) 0.2rem;
+}
+  
+.backDrop {
+    background-color: var(--primary-color);
+    width: 20rem;
+    border-radius: 0 5rem 5rem 0;
+    height: 9rem;
+    margin: auto 5% auto -3rem;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.backDrop p {
+    margin-left: 3rem;
+    line-height: 0;
+} 
+/*ABOUT PAGE*/
+
+
+/*SERVICES*/
+.bottomCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.bottomCont h1 {
+    color: var(--primary-color);
+    font-size: var(--mainText-size-about);
+}
+  
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+  
+.contents {
+    display: flex;
+    flex-direction: row;
+    color: var(--secondary-color);
+    margin-left: 1rem;
+    width: 28rem;
+    margin-bottom: 2rem;
+}
+  
+.contents img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+  
+.texts {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+  
+.texts p {
+    font-size: var(--miniDescription-size);
+    margin-top: -1rem;
+    text-align: justify;
+}
+
+.contMain {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary-color);
+  padding-bottom: 2rem;
+}
+  
+.cont2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 50%;
+    justify-content: center;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary-color);
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    width: 50%;
+}
+  
+.cont h1 {
+    font-size: var(--slogan-size);
+    font-weight: 500;
+}
+  
+.cont p {
+    font-size: var(--miniDescription-size);
+    width: 50%;
+    margin-top: -1.5rem;
+}
+  
+
+.cont2 img {
+    height: 70%;
+}
+  
+.img2 {
+    margin: 7rem -3rem 0 -3rem;
+    z-index: 1;
+}
+/*SERVICES*/
+
+/*EFFECTS*/
+button {
+    cursor: pointer;
+}
+
+.hover {
+    transition: transform 0.3s ease;
+}
+
+.hover:hover{
+    transform: scale(1.2);
+}
+
+.enlarge {
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+}
+
+.enlarge:hover {
+    transform: scale(1.6);
+}
+/*EFFECTS*/
+
+
+
+/*Mobile Device*/
+@media (max-width: 1006px) {
+    .cont2 {
+        display: none;
+    }
+    .cont {
+        margin-top: 2rem;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        height: auto;
+    }
+    nav ul {
+        display: none;
+    }
+    .mainCont {
+        margin-top: 4rem;
+    }
+    .mainCont img {
+        width: 20rem;
+    }
+    .mainCont h1{
+        font-size: 2.3rem;
+    }
+    .leftCont {
+        width: 80%;
+        margin: 2rem auto;
+    }
+    .rightCont {
+        width: 100%;
+        height: 30rem;
+        padding: 3rem 0;
+    }
+    .bottomContent {
+        flex-direction: column;
+    }
+    .foundingTitans {
+        flex-direction: column;
+    }
+    .bottomCont h1 {
+        text-align: center;
+    }
+}
