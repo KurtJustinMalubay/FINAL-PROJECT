@@ -73,10 +73,6 @@ document.querySelectorAll('.small-image').forEach(img => {
   document.getElementById('buyNow').onclick = () => {
     alert('Proceeding to buy now...');
   };
-  function showMenu() {
-    const menu = document.getElementById('menuDrop');
-    menu.style.marginLeft = menu.style.marginLeft === '0px' ? '-100vw' : '0px';
-  }
   function buyOnline() {
     alert('Redirecting to online order (not functional).');
   }
