@@ -11,6 +11,12 @@
     --miniDescription-size: 0.75rem;
 }
 
+.index {
+    background-image: url(./Images/BG/PHClothing.com\ \(3\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 body {
     margin: 0;
     background-color: var(--background-color);
@@ -110,6 +116,9 @@ nav ul {
 
 .rightCont {
     width: 30%;
+    background-image: url(./Images/BG/PHClothing.com\ \(4\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: var(--sidebar-color);
     text-align: center;
     padding: 1.2rem;
@@ -247,6 +256,9 @@ nav ul {
 .contMain {
   display: flex;
   flex-direction: row;
+  background-image: url(./Images/BG/PHClothing.com\ \(5\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: var(--primary-color);
   padding-bottom: 2rem;
 }
@@ -671,5 +683,8 @@ button {
         }
         .product-sec img {
             margin: auto;
+        }
+        .color-button-hero {
+            flex-direction: column;
         }
     }

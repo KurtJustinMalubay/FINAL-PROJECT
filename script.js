@@ -16,7 +16,7 @@ function loginPage(){
 }
 
 function contact(){
-    window.location.href =  "mailto:phclothingservices@gmail.com";
+    window.location.href =  "mailto:wilmark.racho@cit.edu";
 }
 
 //NAV BUTTON LOGIC
