@@ -586,7 +586,7 @@ button {
 
 
 /*LOGIN PAGE*/
-.hero{
+.heroL{
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -828,6 +828,9 @@ button {
         .backDrop {
             height: 80px;
         }
+        .backDrop p {
+            font-size: 0.8rem;
+        }
         .Menu {
             display: inline-block;
         }
@@ -876,7 +879,8 @@ button {
             margin: auto;
         }
         .color-button-hero {
-            flex-direction: column;
+            margin-left: -2.9rem;
+            flex-direction: row;
         }
         .parent-left {
             width: 100%;
@@ -886,5 +890,8 @@ button {
         }
         .parent-right {
             display: none;
+        }
+        .hero {
+
         }
     }
