@@ -646,6 +646,13 @@ button {
         .bottomCont h1 {
             text-align: center;
         }
+        .profile img{
+            width: 100px;
+            height: 100px;
+        }
+        .backDrop {
+            height: 80px;
+        }
         .Menu {
             display: inline-block;
         }
