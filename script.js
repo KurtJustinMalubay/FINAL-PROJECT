@@ -15,6 +15,11 @@ function loginPage(){
     }
 }
 
+function functionality(){
+    alert('This function is not yet functional...\nOpening home page...');
+    window.location.href = "./index.html";
+}
+
 function contact(){
     window.location.href =  "mailto:wilmark.racho@cit.edu";
 }
@@ -73,6 +78,6 @@ document.querySelectorAll('.small-image').forEach(img => {
   document.getElementById('buyNow').onclick = () => {
     alert('Proceeding to buy now...');
   };
-  function buyOnline() {
-    alert('Redirecting to online order (not functional).');
-  }
+//   function buyOnline() {
+//     alert('Redirecting to online order (not functional).');
+//   }
