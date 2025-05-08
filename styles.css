@@ -879,7 +879,7 @@ button {
             margin: auto;
         }
         .color-button-hero {
-            margin-left: -2.9rem;
+            margin-left: -3.2rem;
             flex-direction: row;
         }
         .parent-left {
@@ -890,8 +890,5 @@ button {
         }
         .parent-right {
             display: none;
-        }
-        .hero {
-
         }
     }
