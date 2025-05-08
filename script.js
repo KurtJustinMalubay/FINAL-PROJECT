@@ -8,7 +8,7 @@ function loginPage(){
     if (username === admin && password === adminPass){
         alert("Successfully logged in");
         login = true;
-        window.location.href = "/Products.html";
+        window.location.href = "./Products.html";
     }
     else{
         alert("Wrong username or password");
@@ -27,9 +27,9 @@ function contact(){
 //NAV BUTTON LOGIC
 function buyOnline(){
     if(!login)
-        window.location.href = "/login.html";
+        window.location.href = "./login.html";
     else
-        window.location.href = "/Products.html";
+        window.location.href = "./Products.html";
 }
 
 //MOBILE MENU LOGIC
